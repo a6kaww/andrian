@@ -3,7 +3,7 @@ import numpy as np
 def transp_matrix(matrix):
     n = len (matrix)
     result = [[matrix[j][i].conjugate() for j in range(n)] for i in range(n)]
-    return result
+    return result  
 
 matrix_D = np.array([[1+1j, 3, 2],[8, -5j, 7-1j]])
 print(matrix_D)
